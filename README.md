@@ -24,4 +24,4 @@ A description of my project: This is to enable users to search for any news of t
 
 
 ### Link to Project
-[My Project Live Page](https://github.com/misanni/project1)
+[My Project Live Page](https://fancy-concha-a55612.netlify.app)
