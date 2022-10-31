@@ -19,7 +19,7 @@
     fetch(url).then((res)=>{
         return res.json()
     }).then((data)=>{
-        console.log(data)
+        console.log(data);
         data.articles.forEach(article=>{
             let li=document.createElement('li');
             let a = document.createElement('a');
@@ -30,7 +30,7 @@
             newsList.appendChild(li);
         })
     }).catch((error)=>{
-        console.log(error)
+        console.log(error);
     })
    
     }
