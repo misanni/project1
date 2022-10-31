@@ -12,7 +12,8 @@
     }
         newsList.innerHTML=''
         e.preventDefault()
-    const apikey = '241e074b3c3945cf850407a246c8b648' 
+    //const apikey = '241e074b3c3945cf850407a246c8b648' 
+    const apikey = 'f9c6bbaa037646eeb918ce6772428bc0'        
     let topic = input.value;
     let url=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
    
