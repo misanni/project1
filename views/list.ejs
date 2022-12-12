@@ -1,0 +1,33 @@
+       
+<h3><a class="btn btn-secondary" href="/student">Create New</a>  <a href="/student/list">Student List</a></h3>
+<table class="table table-striped"style="margin-left:-1rem ;">
+    <thead>
+        <tr>
+            <th>fullname</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>city</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% for(let i = 0; i < list.length; i++) { %>
+        <tr>
+            <td><%= list[i].fullname %></td>
+            <td><%= list[i].email %></td>
+            <td><%= list[i].mobile %></td>
+            <td><%= list[i].city %></td>
+            
+            <td>
+                <a class="btn btn-primary btn-sm" href="/student/<%= list[i].id %>">Edit</a>
+            </td>
+            <td >
+                 <a class="btn btn-primary btn-sm" href="/student/delete/<%= list[i].id %>"
+                onclick="return confirm('Are you sure you want to delete this record?');">Delete</a>
+            </td>
+        </tr>
+   <% } %>
+   
+    </tbody>
+</table>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<center><h1><%= msg  %></h1></center>
